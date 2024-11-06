@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inscription">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="INSCRIPTION"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#333333" />
+
+
+        <ImageView
+            android:id="@+id/imgFicheAnimal"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ajouter"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="24dp"
+            android:scaleType="centerInside" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Photo:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666" />
+
+                <Spinner
+                    android:id="@+id/spinnerAvat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textViewRole"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Role"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666" />
+
+                <Spinner
+                    android:id="@+id/spinnerRole"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nom:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666" />
+
+                <EditText
+                    android:id="@+id/nomUser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:hint="Votre nom"
+                    android:padding="8dp"
+                    android:backgroundTint="#AAAAAA" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Prénom:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666" />
+
+                <EditText
+                    android:id="@+id/prenomUser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:hint="Votre prénom"
+                    android:padding="8dp"
+                    android:backgroundTint="#AAAAAA" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textViewMail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Email:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666" />
+
+                <EditText
+                    android:id="@+id/mailUser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="#AAAAAA"
+                    android:hint="Votre email"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textPass1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mot de passe:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666" />
+
+                <EditText
+                    android:id="@+id/passwordUser1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="#AAAAAA"
+                    android:hint="Choisissez un mot de passe"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/textPass2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Confirmation:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666" />
+
+                <EditText
+                    android:id="@+id/passwordUser2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="#AAAAAA"
+                    android:hint="Conffirmez votre mot de passe"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnModifierAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:text="+ Ajouter"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

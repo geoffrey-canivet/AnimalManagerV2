@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_mes_animaux">
+
+    <fragment
+        android:id="@+id/nav_profil"
+        android:name="com.example.animalmanager.ui.profil.FragProfil"
+        android:label="Profil utilisateur"
+        tools:layout="@layout/fragment_frag_profil" />
+    <fragment
+        android:id="@+id/nav_mes_animaux"
+        android:name="com.example.animalmanager.ui.mesAnimaux.FragMesAnimaux"
+        android:label="Mes animaux"
+        tools:layout="@layout/fragment_frag_mes_animaux">
+        <action
+            android:id="@+id/action_nav_mes_animaux_to_nav_fiche_animal"
+            app:destination="@id/nav_fiche_animal" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_fiche_animal"
+        android:name="com.example.animalmanager.ui.ficheAnimal.FicheAnimal"
+        android:label="Fiche Animal"
+        tools:layout="@layout/fragment_fiche_animal">
+        <argument
+            android:name="animalId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_nav_fiche_animal_to_nav_mes_animaux"
+            app:destination="@id/nav_mes_animaux" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_ajouter_des_animaux"
+        android:name="com.example.animalmanager.ui.ajouterAnimaux.AjouterAnimaux"
+        android:label="Ajouter des animaux"
+        tools:layout="@layout/fragment_ajouter_animaux">
+        <action
+            android:id="@+id/action_nav_ajouter_des_animaux_to_nav_mes_animaux"
+            app:destination="@id/nav_mes_animaux" />
+    </fragment>
+</navigation>

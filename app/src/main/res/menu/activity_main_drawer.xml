@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+    <item android:title="Services">
+        <menu>
+            <item
+                android:id="@+id/nav_mes_animaux"
+                android:icon="@drawable/pattes"
+                android:title="Mes animaux" />
+            <item
+                android:id="@+id/nav_ajouter_des_animaux"
+                android:icon="@drawable/plus_symbole_noir"
+                android:title="Ajouter des animaux" />
+        </menu>
+    </item>
+
+    <item android:title="Utilisateur">
+        <menu>
+            <item
+                android:id="@+id/nav_profil"
+                android:title="Profil"
+                android:icon="@drawable/compte_utilisateur"
+                />
+            <item
+                android:id="@+id/nav_deconnexion"
+                android:title="Se deconnecter"
+                android:icon="@drawable/se_deconnecter"
+                />
+        </menu>
+    </item>
+</menu>

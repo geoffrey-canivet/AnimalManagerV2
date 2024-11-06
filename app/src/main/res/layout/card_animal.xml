@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+
+        <ImageView
+            android:id="@+id/imageViewHeader"
+            android:layout_width="60dp"
+            android:layout_height="68dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="20dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="User Image"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/user1" />
+
+
+        <LinearLayout
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingEnd="8dp">
+
+            <TextView
+                android:id="@+id/cardAnimType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Type"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cardAnimNom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:text="Nom"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/cardAnimIsFed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:text="Nourri"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageViewInfo"
+                android:layout_width="50dp"
+                android:layout_height="47dp"
+                android:layout_marginEnd="8dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Camera Icon"
+                android:padding="4dp"
+                android:gravity="center_vertical"
+                app:srcCompat="@drawable/informations" />
+
+            <ImageView
+                android:id="@+id/icoSupprimer"
+                android:layout_width="42dp"
+                android:layout_height="43dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Add Icon"
+                android:padding="4dp"
+                android:gravity="center_vertical"
+                app:srcCompat="@drawable/poubelle_symbole_noir" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
